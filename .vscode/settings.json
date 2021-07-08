@@ -1,0 +1,32 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "Ricty Diminished",
+    "editor.renderWhitespace": "all",
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true, //ファイル保存時にPrettierでフォーマット
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true// ファイル保存時にESLintでフォーマット
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode", //フォーマッタをprettierに指定
+    "eslint.codeAction.showDocumentation": {
+    
+        "enable": true
+    },
+    "eslint.packageManager": "yarn",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "window.zoomLevel": 1,
+    "javascript.preferences.importModuleSpecifier": "non-relative"
+}
