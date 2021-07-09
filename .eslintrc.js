@@ -9,5 +9,5 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react"],
-  rules: [{ "react/prop-types": "off" }],
+  rules: { "react/prop-types": "off", "react/react-in-jsx-scope": "off" },
 };
