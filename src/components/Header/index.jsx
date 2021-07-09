@@ -11,7 +11,7 @@ export function Header() {
     <div className={classes.header}>
       {NAV_ITEMS.map((item) => {
         return (
-          <Link href={item.href} key={item.id}>
+          <Link href={item.href} key={item.label}>
             <a className={classes.anchor}>{item.label}</a>
           </Link>
         );
