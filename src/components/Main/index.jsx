@@ -1,3 +1,4 @@
+import React from "react";
 import classes from "src/components/Main/Main.module.css";
 import { Links } from "src/components/Links";
 import { Headline } from "src/components/Headline";
