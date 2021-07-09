@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import classes from "src/components/Header/Header.module.css";
 
 export function Header() {
