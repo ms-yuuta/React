@@ -7,7 +7,7 @@ export const useBgColor = () => {
     switch (router.pathname) {
       case "/":
         return "lightblue";
-      case "/about":
+      case "/posts":
         return "beige";
       default:
         return "";

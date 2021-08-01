@@ -4,7 +4,7 @@ import classes from "src/components/Header/Header.module.css";
 export function Header() {
   const NAV_ITEMS = [
     { href: "/posts", label: "Posts" },
-    { href: "/about", label: "About" },
+    { href: "/", label: "Index" },
   ];
   return (
     <div className={classes.header}>

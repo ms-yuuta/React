@@ -4,11 +4,11 @@ import { Header } from "src/components/Header";
 import { Main } from "src/components/Main";
 import { Footer } from "src/components/Footer";
 
-export default function About(props) {
+export default function Index(props) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>About Page</title>
+        <title>Index Page</title>
       </Head>
       <Header />
       {props.isShow ? <h1>{props.doubleCount}</h1> : null}
@@ -23,7 +23,7 @@ export default function About(props) {
           return <li key={item.id}>{item}</li>;
         })}
       </ul>
-      <Main page="about" />
+      <Main page="index" />
       <Footer />
     </div>
   );
