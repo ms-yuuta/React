@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { fetcher } from "src/utils/fetcher";
 
 export const usePost = () => {
+
   const router = useRouter();
   const { data: post, error: postError } = useSWR(
     router.query.id

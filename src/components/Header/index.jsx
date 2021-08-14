@@ -5,6 +5,8 @@ export function Header() {
   const NAV_ITEMS = [
     { href: "/", label: "Index" },
     { href: "/posts", label: "Posts" },
+    { href: "/users", label: "Users" },
+    { href: "/comments", label: "Comments" }
   ];
   return (
     <div className={classes.header}>
