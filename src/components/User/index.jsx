@@ -1,4 +1,4 @@
-import { PostsByUserId } from "src/components/Posts/postsByUserId";
+import { PostsByUserId } from "src/components/Posts/PostsByUserId";
 import { useUser } from "src/hooks/useUser";
 
 export const UserComponent = () => {
