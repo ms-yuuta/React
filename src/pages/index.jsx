@@ -8,6 +8,7 @@ export default function Index() {
         <title>Index Page</title>
       </Head>
       <Header />
+      <div className="text-red-500">test</div>
       <h1>Next.js</h1>
       <p>Json placeholderを学ぼう</p>
     </div>
