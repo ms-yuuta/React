@@ -22,10 +22,14 @@ export const Post = () => {
         <title>{data?.title}</title>
       </Head>
       <div>
-        <h1>{data?.title}</h1>
-        <p>{data?.body}</p>
+        <h1 className="text-3xl font-bold">{data?.title}</h1>
+        <p className="text-xl text-gray-800 mt-2">{data?.body}</p>
+        <h2 className="text-xl font-bold mt-6">User</h2>
         <UserByUserId userId={data.userId} />
-        <CommentsByPostId id={data.id} />
+        <h2 className="text-xl font-bold mt-10">Comments List</h2>
+        <div className="mt-3">
+          <CommentsByPostId id={data.id} />
+        </div>
       </div>
     </div>
   );

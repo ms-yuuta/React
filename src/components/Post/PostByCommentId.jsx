@@ -1,9 +1,10 @@
 import { usePost } from "src/hooks/usePost";
+import  Link  from "next/link";
 
 export const PostByCommentId = (props) => {
   const { data, error, isLoading } = usePost(props.id);
 
-  console.log({data,error});
+  console.log({ data, error });
 
   if (isLoading) {
     return <div>Now loading...</div>;
@@ -15,10 +16,9 @@ export const PostByCommentId = (props) => {
 
   return (
     <div>
-      <div>
-        <h1>{data?.title}</h1>
-        <p>{data?.body}</p>
-      </div>
+      <Link href={`/post/${data?.id}`}>
+        <a className="text-lg hover:text-blue-500">{data?.title}</a>
+      </Link>
     </div>
   );
 };

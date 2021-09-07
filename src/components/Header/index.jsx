@@ -8,7 +8,7 @@ export function Header() {
     { href: "/comments", label: "Comments" },
   ];
   return (
-    <div className="flex justify-center items-center border-b w-full h-24">
+    <div className="flex justify-center items-center border-b w-full h-24 mb-8">
       {NAV_ITEMS.map((item) => {
         return (
           <Link href={item.href} key={item.label}>

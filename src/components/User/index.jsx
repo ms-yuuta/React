@@ -14,10 +14,17 @@ export const UserComponent = () => {
 
   return (
     <div>
-      <h2>User Page</h2>
-      <p>username : {data?.username}</p>
-      <p>email : {data?.email}</p>
-      <PostsByUserId id={data.id} />
+      <h2 className="text-3xl font-bold">{data?.username}</h2>
+      <ul className="list-inside list-disc mt-3 text-lg">
+        <li>{data?.email}</li>
+        <li>{data?.username}</li>
+        <li>{data?.phone}</li>
+      </ul>
+
+      <h2 className="text-xl font-bold mt-10">Posts</h2>
+      <div className="mt-2">
+        <PostsByUserId id={data.id} />
+      </div>
     </div>
   );
 };

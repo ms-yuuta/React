@@ -15,12 +15,12 @@ export const CommentComponent = () => {
 
   return (
     <div>
-      <h1>Comment Page</h1>
-      <p>{data?.name}</p>
-      <p>{data?.email}</p>
-      <p>{data?.body}</p>
-      <h2>元の記事</h2>
-      <PostByCommentId id={data?.postId}/>
+      <p className="text-2xl font-bold">{data?.body}</p>
+      <p className="text-lg">Created by {data?.name}</p>
+      <h2 className="text-xl font-bold mt-10">元の記事</h2>
+      <div className="mt-2">
+        <PostByCommentId id={data?.postId} />
+      </div>
     </div>
   );
 };
