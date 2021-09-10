@@ -14,7 +14,7 @@ export const UserComponent = () => {
 
   return (
     <div>
-      <h2 className="text-3xl font-bold">{data?.username}</h2>
+      <h2 className="text-3xl font-bold">{data?.name}</h2>
       <ul className="list-inside list-disc mt-3 text-lg">
         <li>{data?.email}</li>
         <li>{data?.username}</li>
