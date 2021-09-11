@@ -1,8 +1,8 @@
 import { fetcher } from "src/utils/fetcher";
-import useSWR from "swr";
+import useSWRImmutable from "swr/immutable";
 
 const useFetchArray = (url) => {
-  const { data, error } = useSWR(url, fetcher);
+  const { data, error } = useSWRImmutable(url, fetcher);
 
   return {
     data,
@@ -12,26 +12,28 @@ const useFetchArray = (url) => {
   };
 };
 
+const API_URL = `https://jsonplaceholder.typicode.com`;
+
 export const useComments = () => {
-  return useFetchArray("https://jsonplaceholder.typicode.com/comments");
+  return useFetchArray(`${API_URL}/comments`);
 };
 
 export const usePosts = () => {
-  return useFetchArray("https://jsonplaceholder.typicode.com/posts");
+  return useFetchArray(`${API_URL}/posts`);
 };
 
 export const useUsers = () => {
-  return useFetchArray("https://jsonplaceholder.typicode.com/users");
+  return useFetchArray(`${API_URL}/users`);
 };
 
 export const useCommentsByPostId = (id) => {
   return useFetchArray(
-    id ? `https://jsonplaceholder.typicode.com/comments?postId=${id}` : null
+    id ? `${API_URL}/comments?postId=${id}` : null
   );
 };
 
 export const usePostsByUserId = (id) => {
   return useFetchArray(
-    id ? `https://jsonplaceholder.typicode.com/posts?userId=${id}` : null
+    id ? `${API_URL}/posts?userId=${id}` : null
   );
 };
