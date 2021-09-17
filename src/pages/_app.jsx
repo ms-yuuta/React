@@ -4,12 +4,13 @@ import { Layout } from "src/components/Layout";
 import { SWRConfig } from "swr";
 import "tailwindcss/tailwind.css";
 
-function MyApp({ Component, pageProps }) {
-  const fetcher = async (url) => {
-    const res = await fetch(url);
-    const json = await res.json();
-    return json;
-  };
+const fetcher = async (url) => {
+  const res = await fetch(url);
+  const json = await res.json();
+  return json;
+};
+
+const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
