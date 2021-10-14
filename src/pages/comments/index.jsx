@@ -7,7 +7,7 @@ export const getStaticProps = async () => {
   const COMMENTS_API_URL = `https://jsonplaceholder.typicode.com/comments`;
   const comments = await fetch(COMMENTS_API_URL);
   const commentsData = await comments.json();
-
+  
   return {
     props: {
       fallback: {
